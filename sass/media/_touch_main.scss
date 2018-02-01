@@ -1,0 +1,240 @@
+
+@include respond-compact {
+    .fotter_continer{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .ev_banner{
+        background-image: url("../images/desktop.jpg");
+    }
+
+}
+@include respond-pad {
+    .ev_banner{
+        background-image: url("../images/pad.jpg");
+        height: 352px;
+    }
+    .fotter_continer{
+        width: 100%;
+    }
+    .puoduct_full{
+        width: 100%;
+    }
+    .ev_a{
+        width: 46%;
+        margin-right: 10px;
+    }
+    .ev_b{
+        width: 46%;
+        margin-right: 10px;
+    }
+    .ev_c{
+        width: 30%;
+        margin-left: 38px;
+        margin-right: 10px;
+    }
+    .ev_d{
+        width: 30%;
+        margin-right: 10px;
+    }
+    .ev_e{
+        width: 30%;
+        margin-right: 10px;
+    }
+    .pur_box{
+        width: 24.99%;
+        margin-bottom: 30px;
+        height: 48vh;
+    }
+    .pur_box2{
+        width: 24.99%;
+        margin-bottom: 30px;
+        height: 48vh;
+    }
+    .pur_box3{
+        width: 24.99%;
+        margin-bottom: 30px;
+        height: 48vh;
+    }
+    .pur_box4{
+        width: 24.99%;
+        margin-bottom: 30px;
+        height: 48vh;
+    }
+    .qrcode{
+        float: none;
+        width: 100px;
+        margin: 10px auto;
+    }
+    .ft_font{
+        width: 100%;
+        float:none;
+        text-align: center;
+    }
+    #id_content {
+        /* 留出header及footer區塊的空間 */
+        // padding-top: 40px;
+        padding-bottom: 227px;
+    }
+
+    #id_footer {
+        /* 設定footer的高度 */
+        height:227px;
+        box-sizing: border-box;
+        /* 設定footer絕對位置在底部 */
+        position: absolute;
+        bottom: 0;
+        /* 展開footer寬度 */
+        width: 100%;
+        background-color: #369d88;
+    }
+    .logo_coneker{
+        float: none;
+        width: 464px;
+        margin: 0 auto;
+    }
+    .trango{
+         li{
+
+             a{
+                 font-size: 1.1em;
+                 color:#ffffff;
+                 &:hover{
+                     color:#f1e632;
+                 }
+             }
+         }
+    }
+}
+@include respond-mobile {
+    .shadow_bg{
+        top: 67px;
+    }
+    #id_header{
+        height: 67px;
+    }
+    .logo{
+        width: 225px;
+    }
+    .prev{
+        width: 40px;
+    }
+    .next{
+        width: 40px;
+    }
+    .ev_banner{
+        background-image: url("../images/pad.jpg");
+        height: 300px;
+    }
+    .puoduct_full{
+        width: 100%;
+        // padding: 0px 30px;
+    }
+    .logo_pic {
+    width: 289px;
+    padding: 17px 20px;
+    }
+    .search_bar{
+        width: 80px;
+    }
+    .pur_box{
+        width:50%;
+        height: 56vh;
+    }
+    .pur_box2{
+        width:50%;
+        height: 56vh;
+    }
+    .pur_box3{
+        width:50%;
+        height: 56vh;
+    }
+    .pur_box4{
+        width:50%;
+        height: 56vh;
+    }
+    .ev_a{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .ev_a2{
+        margin-bottom: 20px;
+    }
+    .ev_b{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .ev_c{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .ev_d{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .ev_e{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .login{
+        right:110px;
+    }
+    .add{
+        bottom:0px;
+    }
+    .abox{
+        display: inline;
+    }
+    .logo_coneker{
+        float: none;
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+@include respond-web-mobile {
+    .hover_box{
+        padding: 10%;
+        ul{
+        margin-left: 10px;
+            .as{
+                font-size: 1.1em;
+            }
+        }
+    }
+    .logofont{
+        font-size: .7em;
+    }
+    .ft_logo{
+        width: 65px;
+    }
+    .logo_coneker{
+        float: none;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .pur_box{
+        width:50%;
+        margin-bottom: 20px;
+    }
+    .pur_box2{
+        width:50%;
+        margin-bottom: 20px;
+    }
+    .pur_box3{
+        width:50%;
+        margin-bottom: 20px;
+    }
+    .pur_box4{
+        width:50%;
+        margin-bottom: 20px;
+    }
+    .ev_banner{
+        background-image: url("../images/mobile.jpg");
+        height: 300px;
+    }
+    .footer_continer{
+        margin: 0 auto;
+    }
+}
