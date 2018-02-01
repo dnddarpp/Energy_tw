@@ -438,7 +438,7 @@ html {
 
 .add {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 20px;
   font-size: 0.7em;
   color: #cccccc;
