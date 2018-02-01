@@ -319,6 +319,7 @@ html {
   background-color: #f2f2f2;
   overflow: hidden;
   background-size: cover;
+  cursor: pointer;
 }
 .pur_box1 img, .pur_box img, .pur_box2 img, .pur_box3 img, .pur_box4 img {
   width: 100%;
