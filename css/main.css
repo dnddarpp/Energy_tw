@@ -436,6 +436,21 @@ html {
   width: 100%;
 }
 
+.fiiont {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  width: 232px;
+  margin-left: -116px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
+.logo_center {
+  margin-left: 20px;
+}
+
 .add {
   position: absolute;
   top: 10px;
@@ -521,8 +536,22 @@ html {
   .ev_banner {
     background-image: url("../images/desktop.jpg");
   }
+
+  .fiiont {
+    top: 24%;
+    width: 232px;
+    margin-left: -116px;
+    font-size: 1.2em;
+  }
 }
 @media only screen and (max-width: 1238px) {
+  .fiiont {
+    top: 24%;
+    width: 232px;
+    margin-left: -116px;
+    font-size: 1.4em;
+  }
+
   .ev_banner {
     background-image: url("../images/pad.jpg");
     height: 352px;
@@ -600,7 +629,7 @@ html {
 
   #id_content {
     /* 留出header及footer區塊的空間 */
-    padding-bottom: 213x;
+    padding-bottom: 213px;
   }
 
   #id_footer {
@@ -630,6 +659,17 @@ html {
   }
 }
 @media only screen and (max-width: 768px) {
+  .logo_center {
+    margin-left: 0;
+  }
+
+  .fiiont {
+    top: 24%;
+    width: 232px;
+    margin-left: -116px;
+    font-size: 1.4em;
+  }
+
   #id_content {
     /* 留出header及footer區塊的空間 */
     padding-bottom: 180px;
@@ -758,6 +798,13 @@ html {
   }
 }
 @media only screen and (max-width: 500px) {
+  .fiiont {
+    top: 24%;
+    width: 232px;
+    margin-left: -116px;
+    font-size: .8em;
+  }
+
   .hover_box {
     padding: 10%;
   }
@@ -809,6 +856,16 @@ html {
 
   .footer_continer {
     margin: 0 auto;
+  }
+
+  .hover_box {
+    padding: 10%;
+  }
+  .hover_box ul {
+    margin-left: 10px;
+  }
+  .hover_box ul .as {
+    font-size: 1em;
   }
 }
 /** background image file **/

@@ -7,9 +7,20 @@
     .ev_banner{
         background-image: url("../images/desktop.jpg");
     }
-
+    .fiiont{
+        top:24%;
+        width: 232px;
+        margin-left: -116px;
+        font-size: 1.2em;
+    }
 }
 @include respond-pad {
+    .fiiont{
+        top:24%;
+        width: 232px;
+        margin-left: -116px;
+        font-size: 1.4em;
+    }
     .ev_banner{
         background-image: url("../images/pad.jpg");
         height: 352px;
@@ -74,7 +85,7 @@
     #id_content {
         /* 留出header及footer區塊的空間 */
         // padding-top: 40px;
-        padding-bottom: 213x;
+        padding-bottom: 213px;
     }
 
     #id_footer {
@@ -107,6 +118,15 @@
     }
 }
 @include respond-mobile {
+    .logo_center{
+        margin-left: 0;
+    }
+    .fiiont{
+        top:24%;
+        width: 232px;
+        margin-left: -116px;
+        font-size:1.4em;
+    }
     #id_content {
         /* 留出header及footer區塊的空間 */
         // padding-top: 40px;
@@ -214,6 +234,12 @@
     }
 }
 @include respond-web-mobile {
+    .fiiont{
+        top:24%;
+        width: 232px;
+        margin-left: -116px;
+        font-size: .8em;
+    }
     .hover_box{
         padding: 10%;
         ul{
@@ -256,5 +282,14 @@
     }
     .footer_continer{
         margin: 0 auto;
+    }
+    .hover_box{
+        padding: 10%;
+        ul{
+        margin-left: 10px;
+            .as{
+                font-size: 1em;
+            }
+        }
     }
 }
