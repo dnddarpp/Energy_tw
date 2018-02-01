@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script src="dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="dist/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
     <title></title>
-
 </head>
 
 <body>
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                     <div class="qrcode"><img src="images/qrcode.png"></div>
-                    <div class="ft_font">Copyright © Asian MICE Forum 2016 . All rights Reserved.</div>
+                    <div class="ft_font"></div>
                 </div>
 
             </div>
@@ -141,30 +142,49 @@
     </div>
     <script src="dist/js/swiper.min.js"></script>
     <script>
-    var swiper = new Swiper('.ev_banner', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    $(document).ready(function () {
-      $(".hover_down").hide()
-      $(".pbox").hover(function(){
-        $(".hover_down").slideUp()
-        $(this).find(".hover_down").show()
-      },function(){
-        $(".hover_down").hide()
-      })
-      var ww = $(window).width()
-		  if(ww<=800){
+      var swiper = new Swiper('.ev_banner', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      $(document).ready(function () {
+        hideAll()
+        $(".pbox").hover(function(){
+          var item = $(this).find(".hover_down")
+          showMenu(item)
+        },function(){
+          hideAll()
+        })
 
+        /*$(".pbox").click(function(){
+          var item = $(this).find(".hover_down")
+          $(".hover_down").removeClass("on")
+          item.addClass("on")
+          showMenu(item)
+        })*/
+      })
+      function showMenu(obj){
+        console.log("showMenu")
+        hideAll()
+        var hh = $(window).height()
+        obj.slideDown()
       }
-    })
-  </script>
+      function hideAll(){
+        console.log("hideAll")
+        $(".hover_down").each(function(){
+          if ( $(this).hasClass("on")){
+
+          }else{
+            $(this).slideUp()
+          }
+        })
+      }
+    </script>
 </body>
 
 </html>
