@@ -600,12 +600,12 @@ html {
 
   #id_content {
     /* 留出header及footer區塊的空間 */
-    padding-bottom: 180px;
+    padding-bottom: 213x;
   }
 
   #id_footer {
     /* 設定footer的高度 */
-    height: 180px;
+    height: 213px;
     box-sizing: border-box;
     /* 設定footer絕對位置在底部 */
     position: absolute;
@@ -630,6 +630,23 @@ html {
   }
 }
 @media only screen and (max-width: 768px) {
+  #id_content {
+    /* 留出header及footer區塊的空間 */
+    padding-bottom: 180px;
+  }
+
+  #id_footer {
+    /* 設定footer的高度 */
+    height: 180px;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+    background-color: #369d88;
+  }
+
   .shadow_bg {
     top: 67px;
   }
