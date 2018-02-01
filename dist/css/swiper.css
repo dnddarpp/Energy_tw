@@ -267,7 +267,7 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  margin: 0 4px;
+  margin: 0 6px;
   border: 2px solid #fff;
   display: inline-block;
   border-radius: 100%;
@@ -317,7 +317,7 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms top, 200ms -webkit-transform;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 4px;
+  margin: 0 6px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
