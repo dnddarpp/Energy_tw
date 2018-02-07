@@ -259,7 +259,7 @@ html {
 
 .logo {
   width: 342px;
-  padding: 17px 20px;
+  padding: 15px 20px;
 }
 .logo img {
   width: 100%;
@@ -726,7 +726,7 @@ html {
     top: 24%;
     width: 232px;
     margin-left: -116px;
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
 
   .hover_box ul .as {
@@ -751,15 +751,11 @@ html {
   }
 
   .shadow_bg {
-    top: 83px;
-  }
-
-  .date {
-    font-size: 1vw;
+    top: 88px;
   }
 
   #id_header {
-    height: 83px;
+    height: 88px;
   }
 
   .logo {
@@ -860,7 +856,7 @@ html {
 
   .logo_coneker {
     float: none;
-    width: 309px;
+    width: 311px;
     margin: 0 auto;
   }
 
@@ -882,7 +878,7 @@ html {
     margin-left: 10px;
   }
   .hover_box ul .as {
-    font-size: 1.2vw;
+    font-size: 2.7vw;
   }
 
   .logofont {
