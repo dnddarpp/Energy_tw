@@ -4,6 +4,14 @@
         width: 1000px;
         margin: 0 auto;
     }
+    .event_full{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .puoduct_full{
+        width: 1000px;
+        margin: 0 auto;
+    }
     .ev_banner{
         background-image: url("../images/desktop.jpg");
     }
@@ -11,15 +19,28 @@
         top:24%;
         width: 232px;
         margin-left: -116px;
-        font-size: 1.2em;
     }
+
 }
 @include respond-pad {
+    .puoduct_full{
+        width: 100%;
+    }
+    .event_full{
+        width: 100%;
+    }
     .fiiont{
         top:24%;
         width: 232px;
         margin-left: -116px;
-        font-size: 1.4em;
+        font-size: 1.5vw;
+    }
+    .hover_box{
+        ul{
+            .as{
+                font-size: 1.3vw;
+            }
+        }
     }
     .ev_banner{
         background-image: url("../images/pad.jpg");
@@ -32,8 +53,9 @@
         width: 100%;
     }
     .ev_a{
-        width: 46%;
-        margin-right: 10px;
+        width: 45%;
+        // margin-right: 10px;
+        margin-left: 36px;
     }
     .ev_b{
         width: 46%;
@@ -55,22 +77,22 @@
     .pur_box{
         width: 24.99%;
         margin-bottom: 30px;
-        height: 48vh;
+        height: 300px;
     }
     .pur_box2{
         width: 24.99%;
         margin-bottom: 30px;
-        height: 48vh;
+        height: 300px;
     }
     .pur_box3{
         width: 24.99%;
         margin-bottom: 30px;
-        height: 48vh;
+        height: 300px;
     }
     .pur_box4{
         width: 24.99%;
         margin-bottom: 30px;
-        height: 48vh;
+        height: 300px;
     }
     .qrcode{
         float: none;
@@ -125,17 +147,24 @@
         top:24%;
         width: 232px;
         margin-left: -116px;
-        font-size:1.4em;
+        font-size: 3vw;
+    }
+    .hover_box{
+        ul{
+            .as{
+                font-size: 2.5vw;
+            }
+        }
     }
     #id_content {
         /* 留出header及footer區塊的空間 */
         // padding-top: 40px;
-        padding-bottom: 180px;
+        padding-bottom: 212px;
     }
 
     #id_footer {
         /* 設定footer的高度 */
-        height:180px;
+        height:212px;
         box-sizing: border-box;
         /* 設定footer絕對位置在底部 */
         position: absolute;
@@ -145,10 +174,14 @@
         background-color: #369d88;
     }
     .shadow_bg{
-        top: 67px;
+        top: 83px;
+
+    }
+    .date{
+        font-size: 1vw;
     }
     #id_header{
-        height: 67px;
+        height: 83px;
     }
     .logo{
         width: 225px;
@@ -176,19 +209,19 @@
     }
     .pur_box{
         width:50%;
-        height: 56vh;
+        height: 370px;
     }
     .pur_box2{
         width:50%;
-        height: 56vh;
+        height: 370px;
     }
     .pur_box3{
         width:50%;
-        height: 56vh;
+        height: 370px;
     }
     .pur_box4{
         width:50%;
-        height: 56vh;
+        height: 370px;
     }
     .ev_a{
         width: 100%;
@@ -229,8 +262,11 @@
     }
     .logo_coneker{
         float: none;
-        width: 450px;
+        width: 309px;
         margin: 0 auto;
+    }
+    .date{
+        top:47px;
     }
 }
 @include respond-web-mobile {
@@ -238,14 +274,13 @@
         top:24%;
         width: 232px;
         margin-left: -116px;
-        font-size: .8em;
     }
     .hover_box{
         padding: 10%;
         ul{
         margin-left: 10px;
             .as{
-                font-size: 1.1em;
+                font-size: 1.2vw;
             }
         }
     }
@@ -257,24 +292,28 @@
     }
     .logo_coneker{
         float: none;
-        width: 320px;
+        width: 229px;
         margin: 0 auto;
     }
     .pur_box{
         width:50%;
         margin-bottom: 20px;
+        height: 234px;
     }
     .pur_box2{
         width:50%;
         margin-bottom: 20px;
+        height: 234px;
     }
     .pur_box3{
         width:50%;
         margin-bottom: 20px;
+        height: 234px;
     }
     .pur_box4{
         width:50%;
         margin-bottom: 20px;
+        height: 234px;
     }
     .ev_banner{
         background-image: url("../images/mobile.jpg");
@@ -283,13 +322,5 @@
     .footer_continer{
         margin: 0 auto;
     }
-    .hover_box{
-        padding: 10%;
-        ul{
-        margin-left: 10px;
-            .as{
-                font-size: 1em;
-            }
-        }
-    }
+
 }
