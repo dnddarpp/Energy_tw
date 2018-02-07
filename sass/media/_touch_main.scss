@@ -20,9 +20,15 @@
         width: 232px;
         margin-left: -116px;
     }
+    .logo_full{
+        width: 1000px;
+    }
 
 }
 @include respond-pad {
+    .logo_full{
+        width: 100%;
+    }
     .puoduct_full{
         width: 100%;
     }
@@ -318,5 +324,5 @@
     .footer_continer{
         margin: 0 auto;
     }
-
+    
 }

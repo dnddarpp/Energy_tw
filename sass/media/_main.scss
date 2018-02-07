@@ -147,6 +147,7 @@ bottom: 20px;
 .headerbg{
     background-image: url("../images/headerbg.jpg");
 }
+
 .logo{
     width: 342px;
     padding: 15px 20px;
@@ -428,7 +429,7 @@ bottom: 20px;
     margin-left: 10px;
         .as{
             color: #fff;
-            font-size: .9vw;
+            font-size: .7vw;
             list-style-image:url("../images/trang.svg");
             margin-bottom: 10px;
         }
@@ -436,9 +437,9 @@ bottom: 20px;
     }
 }
 .logo_full{
+    width: 1200px;
+    margin: 40px auto;
     box-sizing: border-box;
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
 .sponlogo{
     display: inline-block;
